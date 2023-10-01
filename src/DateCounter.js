@@ -8,25 +8,25 @@ const DateCounter = () => {
   const date = new Date("june 21 2027");
   date.setDate(date.getDate() + count);
 
-  const dec = function () {
+  const dec = () => {
     // setCount((count) => count - 1);
     setCount((count) => count - step);
   };
 
-  const inc = function () {
+  const inc = () => {
     // setCount((count) => count + 1);
     setCount((count) => count + step);
   };
 
-  const defineCount = function (e) {
+  const defineCount = (e) => {
     setCount(Number(e.target.value));
   };
 
-  const defineStep = function (e) {
+  const defineStep = (e) => {
     setStep(Number(e.target.value));
   };
 
-  const reset = function () {
+  const reset = () => {
     setCount(0);
     setStep(1);
   };
