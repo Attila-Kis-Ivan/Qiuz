@@ -119,10 +119,10 @@ progress {
 .btn {
   display: block;
   font-family: inherit;
-  color: inherit;
+  color: var(--color-theme);
   font-size: 2rem;
   border: 2px solid var(--color-dark);
-  background-color: var(--color-dark);
+  background-color: var(--color-darker);
   padding: 1.2rem 2.4rem;
   cursor: pointer;
   border-radius: 100px;
@@ -130,7 +130,7 @@ progress {
 }
 
 .btn:not([disabled]):hover {
-  background-color: var(--color-darkest);
+  background-color: var(--color-dark);
 }
 
 .btn-option:not([disabled]):hover {
@@ -208,13 +208,12 @@ progress {
 .timer {
   float: left;
   font-size: 1.8rem;
-  color: var(--color-medium);
+  color: var(--color-theme);
   border: 2px solid var(--color-dark);
   padding: 1.35rem 2.8rem;
   border-radius: 100px;
 }
 
-/* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
 .loader {
   width: 50px;
   height: 24px;
