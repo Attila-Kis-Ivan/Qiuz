@@ -112,14 +112,14 @@ progress {
   border-radius: 100px;
 }
 ::-webkit-progress-value {
-  background-color: var(--color-theme);
+  background-color: var(--color-meium);
   border-radius: 100px;
 }
 
 .btn {
   display: block;
   font-family: inherit;
-  color: var(--color-theme);
+  color: inherit;
   font-size: 2rem;
   border: 2px solid var(--color-dark);
   background-color: var(--color-darker);
@@ -143,6 +143,7 @@ progress {
 
 .btn-ui {
   float: right;
+  color: var(--color-theme);
 }
 
 .options {
