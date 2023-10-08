@@ -1,11 +1,11 @@
 :root {
-  --color-darkest: #343a40;
+  --color-darkest: #000000;
   --color-dark: #495057;
   --color-medium: #ced4da;
   --color-light: #f1f3f5;
 
-  --color-theme: #1098ad;
-  --color-accent: #ffa94d;
+  --color-theme: #b127e8;
+  --color-accent: #eadbf0;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
@@ -64,6 +64,7 @@ img {
 h1 {
   font-family: "Codystar";
   font-size: 5.6rem;
+  color: var(--color-theme);
 }
 
 h2 {
