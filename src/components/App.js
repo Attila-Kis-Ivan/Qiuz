@@ -55,7 +55,7 @@ const App = () => {
     initialState
   );
 
-  const numQuestins = questions.length;
+  const numQuestions = questions.length;
 
   useEffect(function () {
     fetch("http://localhost:9000/questions")
@@ -70,7 +70,7 @@ const App = () => {
         {status === "loading" && <Loader />}
         {status === "error" && <Error />}
         {status === "ready" && (
-          <StartingScreen numQuestins={numQuestins} dispatch={dispatch} />
+          <StartingScreen numQuestions={numQuestions} dispatch={dispatch} />
         )}
         {status === "active" && (
           <>
