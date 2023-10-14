@@ -92,7 +92,7 @@ const App = () => {
   );
 
   useEffect(function () {
-    fetch("http://localhost:9000/questions")
+    fetch("https://quizapi-9q6f.onrender.com")
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataReceived", payload: data }))
       .catch((err) => dispatch({ type: "dataFailed" }));
