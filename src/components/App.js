@@ -92,7 +92,7 @@ const App = () => {
   );
 
   useEffect(function () {
-    fetch("https://quizapi-9q6f.onrender.com")
+    fetch("https://quizapi-9q6f.onrender.com/questions")
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataReceived", payload: data }))
       .catch((err) => dispatch({ type: "dataFailed" }));
